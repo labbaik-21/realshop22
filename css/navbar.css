@@ -1,0 +1,281 @@
+
+ 
+ 
+ * {
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav-div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  background-color: #C76A1A;
+  width: 100%;
+}
+
+.left-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left-nav h1 {
+  font-size: 30px;
+  font-family: Poppins;
+  font-weight: 600;
+  color: white;
+}
+
+.left-nav img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  margin-right: 3px;
+}
+
+.right-nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+}
+
+
+
+
+.icon-link {
+  position: relative;
+  color: black;
+  /* আইকনের রঙ */
+  transition: color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+
+}
+
+.icon-link:hover {
+  color: #007bff;
+  /* হোভার করলে যে রঙ হবে */
+  transform: translateY(-1px);
+}
+
+.icon-link2 {
+  position: relative;
+  color: #333;
+  /* আইকনের রঙ */
+  transition: color 0.3s ease, transform 0.2s ease;
+  text-decoration: none;
+}
+
+.icon-link2:hover {
+  color: #007bff;
+  /* হোভার করলে যে রঙ হবে */
+  transform: translateY(-2px);
+}
+
+.icon {
+  width: 28px;
+  height: 28px;
+
+}
+
+/* কার্ট ব্যাজ (ছোট সংখ্যা) */
+.cart-badge {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: #107DDE;
+  color: white;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+}
+
+.search-button {
+  padding: 0;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+
+
+.search-button img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.85) translateX(5px);
+
+}
+
+
+
+.search-bar {
+  width: 99%;
+  display: flex;
+  gap: 0px;
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+  border: 1px solid black;
+  border-radius: 50px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+  transform: translateY(4px) translateX(1px);
+ 
+
+  /* background-color: #f8f9fa;
+  border-radius: 30px; */
+
+}
+
+/* active state */
+.search-bar.active {
+  max-height: 80px;
+  opacity: 1;
+  
+}
+
+
+/* input style (example) */
+.input-box-2 {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+}
+
+.search-button-2 {
+   border: none;
+   border-radius: 50px;
+   background-color: red;
+   color: white;
+   font-weight: 500;
+   transform: scale(0.85) translateX(4px);  
+   width: 90px;
+   font-size: 17px;
+
+}
+
+.middle-nav {
+  display: flex;
+  align-items: center;
+  background-color: #f8f9fa;
+  border-radius: 30px;
+  padding: 8px 15px;
+  width: 550px;
+  box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.middle-nav input {
+  border: none;
+  background: transparent;
+  outline: none;
+  width: 100%;
+  padding: 5px 10px;
+  font-size: 14px;
+}
+
+.middle-nav button {
+  background: none;
+  border: none;
+  color: black;
+  cursor: pointer;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+@media (max-width: 576px) {
+  
+
+  .main-nav-div {
+    width: 100%;
+  }
+
+  .middle-nav {
+    display: none;
+  }
+
+  .left-nav h1 {
+    position: relative;
+    right: 35px;
+  }
+
+  .left-nav img {
+    position: relative;
+    right: 30px;
+  }
+
+  .icon-link2 {
+    display: none;
+  }
+
+  .right-nav {
+    position: relative;
+  }
+
+  .right-nav a {
+    position: absolute;
+    left: 35px;
+  }
+
+  .right-nav button img {
+    position: relative;
+    right: 10px;
+  }
+
+  .right-nav button img:active {
+    opacity: 50%;
+  }
+
+  .right-nav img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .right-nav h1 {
+    font-size: 16px;
+  }
+
+  .icon-link {
+    transform: translateY(3px) translateX(5px);
+
+  }
+
+  .icon-link:hover {
+     transform: translateY(3px) translateX(5px);
+  }
+
+  .left-nav {
+    transform: scale(.90) translateX(-25px);
+  }
+
+ 
+
+  
+
+  
+
+
+}
+
+@media (min-width: 577px) {
+  .right-nav button {
+    display: none;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+
+}
