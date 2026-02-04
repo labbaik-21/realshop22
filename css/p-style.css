@@ -230,6 +230,11 @@
 
       }
 
+ @media (min-width: 768px) {
+      .bottom-navbar {
+           display: hidden;
+ }
+
       .bottom-navbar {
           position: fixed;
           bottom: 0;
@@ -309,3 +314,4 @@
           font-weight: 600;
 
       }
+
